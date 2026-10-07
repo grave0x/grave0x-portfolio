@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Quote — grave0x Software Development</title>
+<style>
+:root{
+  --ink:#14161a; --dim:#5a6068; --line:#d8dbe0; --accent:#0d7a68;
+  --paper:#ffffff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#eef0f3;color:var(--ink);font-family:Inter,system-ui,-apple-system,sans-serif;
+     font-size:14px;line-height:1.55;-webkit-font-smoothing:antialiased;padding:32px 16px}
+.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+.page{max-width:800px;margin:0 auto;background:var(--paper);padding:56px 64px;
+      box-shadow:0 1px 3px rgba(0,0,0,.08),0 8px 28px rgba(0,0,0,.06);border-radius:4px}
+/* letterhead */
+.head{display:flex;justify-content:space-between;align-items:flex-start;
+      border-bottom:2px solid var(--ink);padding-bottom:22px}
+.head .who .name{font-size:21px;font-weight:700;letter-spacing:-.01em}
+.head .who .name b{color:var(--accent);font-weight:700}
+.head .who .sub{color:var(--dim);font-size:12.5px;margin-top:3px}
+.head .meta{text-align:right;color:var(--dim);font-size:12px;line-height:1.7}
+.head .meta .abn{color:var(--ink)}
+/* quote meta */
+.qmeta{display:flex;gap:48px;margin:26px 0 8px}
+.qmeta div .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.qmeta div .v{font-size:14px;font-weight:600;margin-top:2px}
+/* client */
+.to{margin:22px 0 30px;font-size:14px}
+.to .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-bottom:4px}
+/* items */
+table{width:100%;border-collapse:collapse;margin-top:6px}
+th{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);
+   text-align:left;border-bottom:1px solid var(--ink);padding:8px 10px 8px 0}
+th.r{text-align:right}
+td{border-bottom:1px solid var(--line);padding:12px 10px 12px 0;vertical-align:top}
+td.r{text-align:right;font-variant-numeric:tabular-nums}
+td .d{font-weight:600}
+td .note{color:var(--dim);font-size:12.5px;margin-top:2px}
+.tot{display:flex;justify-content:flex-end;margin-top:16px}
+.tot table{width:340px}
+.tot td{border-bottom:none;padding:5px 0 5px 10px}
+.tot td.r{font-variant-numeric:tabular-nums}
+.tot .grand td{border-top:2px solid var(--ink);font-size:16px;font-weight:700;padding-top:10px}
+/* terms */
+.terms{margin-top:38px;color:var(--dim);font-size:12.5px}
+.terms h3{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin-bottom:8px}
+.terms ul{list-style:none}
+.terms li{margin-bottom:4px;padding-left:14px;position:relative}
+.terms li:before{content:"—";position:absolute;left:0}
+.sig{margin-top:44px;display:flex;justify-content:space-between;align-items:flex-end}
+.sig .line{width:260px;border-bottom:1px solid var(--ink);height:34px}
+.sig .lbl{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-top:5px}
+/* print */
+@media print{
+  body{background:#fff;padding:0;font-size:12.5px}
+  .page{box-shadow:none;border-radius:0;max-width:none;padding:36px 8mm;min-height:calc(100vh - 16mm)}
+  a{color:inherit;text-decoration:none}
+}
+@media (max-width:640px){
+  .page{padding:32px 22px}
+  .qmeta{flex-wrap:wrap;gap:20px}
+  .head{flex-direction:column;gap:16px}
+  .head .meta{text-align:left}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="head">
+    <div class="who">
+      <div class="name">grave<b>0x</b> — Software Development</div>
+      <div class="sub">AI-agent harnesses &middot; systems programming &middot; developer tooling</div>
+      <div class="sub mono">github.com/grave0x &middot; [business email] &middot; Australia</div>
+    </div>
+    <div class="meta">
+      <!-- ABN: fill once granted -->
+      <div class="abn">ABN: ______________________</div>
+    </div>
+  </div>
+
+  <div class="qmeta">
+    <div><div class="k">Quote</div><div class="v mono">Q-2026-1010-01</div></div>
+    <div><div class="k">Date</div><div class="v mono">10 October 2026</div></div>
+    <div><div class="k">Valid until</div><div class="v mono">9 November 2026</div></div>
+  </div>
+
+  <div class="to">
+    <div class="k">Prepared for</div>
+    [Client / company name]<br>
+    [Contact person] &middot; [email or address]
+  </div>
+
+  <table>
+    <thead>
+      <tr><th style="width:56%">Description</th><th class="r">Qty</th><th class="r">Unit</th><th class="r">Amount</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="d">[Work item 1 — e.g. Agent harness build: state management + gating + tests]</div>
+          <div class="note">[One line of scope: what is delivered, what is out.]</div>
+        </td>
+        <td class="r">1</td>
+        <td class="r">[fixed]</td>
+        <td class="r">$[amount]</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="d">[Work item 2 — e.g. Developer tooling: CLI + CI pipeline]</div>
+          <div class="note">[One line of scope.]</div>
+        </td>
+        <td class="r">1</td>
+        <td class="r">[fixed]</td>
+        <td class="r">$[amount]</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="d">[Work item 3 — e.g. Integration & handover support]</div>
+          <div class="note">[Billed per day, capped.]</div>
+        </td>
+        <td class="r">[n]</td>
+        <td class="r">[day]</td>
+        <td class="r">$[amount]</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="tot">
+    <table>
+      <tr><td class="r">Subtotal</td><td class="r mono">$[subtotal]</td></tr>
+      <!-- GST: while not registered for GST, no GST is charged. Update once registered. -->
+      <tr><td class="r">GST</td><td class="r mono">not registered — $0.00</td></tr>
+      <tr class="grand"><td class="r">Total due</td><td class="r mono">$[total]</td></tr>
+    </table>
+  </div>
+
+  <div class="terms">
+    <h3>Terms</h3>
+    <ul>
+      <li>Quote valid for 30 days from the date above; changes to scope require a new quote.</li>
+      <li>Work is performed in isolated git worktrees and merged with evidence on acceptance.</li>
+      <li>Payment due within 14 days of invoice; work products are delivered on final payment.</li>
+      <li>Either party may end the engagement with written notice for work not yet started.</li>
+    </ul>
+  </div>
+
+  <div class="sig">
+    <div>
+      <div class="line"></div>
+      <div class="lbl">grave0x — accepted & dated</div>
+    </div>
+    <div>
+      <div class="line"></div>
+      <div class="lbl">Client — accepted & dated</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
